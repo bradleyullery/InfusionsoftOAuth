@@ -1,0 +1,11 @@
+﻿@model List<InfusionsoftOAuth.Models.Contact>
+
+<h2>Found @Model.Count Contact(s)</h2>
+
+<table>
+    <tr><th>Id</th><th>First Name</th><th>Last Name</th></tr>
+    @foreach (var contact in Model)
+    {
+    <tr><th>@contact.Id</th><td>@contact.FirstName</td><td>@contact.LastName</td></tr>
+    }
+</table>
